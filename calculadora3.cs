@@ -87,5 +87,23 @@ namespace calculadora3
             //boton limpiar
             tbDisplay.Text = "";
         }
+
+        private void btnIgual_Click(object sender, EventArgs e)
+        {
+            //boton igual
+            string val1 = "205";
+            string val2 = "55";
+            int resultado = 0;
+            int valor1 = 0;
+            int valor2 = 0;
+
+            valor1 = Convert.ToInt32(val1);
+            valor2 = Convert.ToInt32(val2);
+
+            resultado = valor1 + valor2;
+
+            tbDisplay.Text = resultado.ToString();
+
+        }
     }
 }
